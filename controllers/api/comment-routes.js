@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
         });
 });
 
-//Create a post
+//Create a comment
 router.post("/", (req, res) => {
     Comment.create({
             comment_text: req.body.comment_text,
@@ -27,28 +27,6 @@ router.post("/", (req, res) => {
         .catch((err) => {
             console.log(err);
             res.status(400).json(err);
-        });
-});
-
-//Delete a post
-router.delete('/:id', (req, res) => {
-    Comment.destroy({
-            where: {
-                id: req.params.id
-            }
-        })
-        .then(dbPostData => {
-            if (!dbPostData) {
-                res.status(404).json({
-                    message: 'No post found with this id'
-                });
-                return;
-            }
-            res.json(dbPostData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
         });
 });
 
