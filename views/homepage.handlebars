@@ -1,0 +1,13 @@
+<ul class="post-list">
+    {{#each posts}}
+    <li>
+        <article class="post">
+            <div class="title">
+                <a href="/post/{{id}}">{{title}}</a>
+                <br>
+                {{created_at}}
+            </div>
+        </article>
+    </li>
+    {{/each}}
+</ul>
