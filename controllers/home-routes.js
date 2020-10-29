@@ -35,7 +35,8 @@ router.get('/', (req, res) => {
             }));
 
             res.render('homepage', {
-                posts
+                posts,
+                loggedIn: req.session.loggedIn
             });
         })
         .catch(err => {
@@ -82,13 +83,8 @@ router.get('/post/:id', (req, res) => {
             });
 
             res.render('single-post', {
-                post,
-                loggedIn: req.session.loggedIn
+                post
             });
-
-            // res.render('single-post', {
-            //     post
-            // });
         })
         .catch(err => {
             console.log(err);
