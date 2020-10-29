@@ -2,6 +2,8 @@
     <div class="title">
         <a href="/post/{{id}}">{{title}}</a>
         <p>{{content}}</p>
-        {{formatDate created_at}}
+        <p id="comment-subtitle">
+            created by {{user.username}} on {{formatDate created_at}}
+        </p>
     </div>
 </article>
