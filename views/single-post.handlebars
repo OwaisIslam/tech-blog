@@ -8,6 +8,7 @@
     </div>
 </article>
 
+{{#if loggedIn}}
 <form class="comment-form">
     <div>
         <textarea name="comment-body"></textarea>
@@ -15,8 +16,10 @@
 
     <div>
         <button type="submit">add comment</button>
+        {{!-- <button type="button" class="upvote-btn">upvote</button> --}}
     </div>
 </form>
+{{/if}}
 
 <div class="comments">
     {{#each post.comments}}
@@ -30,3 +33,7 @@
     </section>
     {{/each}}
 </div>
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
