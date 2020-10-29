@@ -1,13 +1,7 @@
 <ul class="post-list">
-    {{#each posts}}
+    {{#each posts as |post|}}
     <li>
-        <article class="post">
-            <div class="title">
-                <a href="/post/{{id}}">{{title}}</a>
-                <br>
-                {{formatDate created_at}}
-            </div>
-        </article>
+        {{> post-info post }}
     </li>
     {{/each}}
 </ul>

@@ -1,12 +1,4 @@
-<article class="post">
-    <div class="title">
-        {{post.title}}
-    </div>
-    <div class="meta">
-        Post created by {{post.user.username}} on {{post.created_at}}
-        <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
-    </div>
-</article>
+{{> post-info post}}
 
 {{#if loggedIn}}
 <form class="comment-form">
