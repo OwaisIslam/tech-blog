@@ -83,7 +83,7 @@ form label {
 }
 
 header {
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,6 +92,11 @@ header {
 
 header h1 {
     font-size: 1em;
+}
+
+.site-name {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 
 main {
