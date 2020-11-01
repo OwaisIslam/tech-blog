@@ -11,17 +11,28 @@ html {
     color: #333;
 }
 
+main,
+.site-name {
+    background-color: #b8cba2;
+}
+
+a,
+.btn-no-style,
+#comment-subtitle {
+    color: #b8cba2;
+}
+
+a:hover,
+.btn-no-style:hover {
+    color: #e2edd5;
+}
+
 a {
     text-decoration: none;
     /* color: #225ca3; */
-    color: #b8cba2;
+    /* color: #b8cba2; */
     font-weight: bold;
     transition: color .1s;
-}
-
-a:hover {
-    /* color: #3486eb; */
-    color: #e2edd5;
 }
 
 button {
@@ -80,9 +91,25 @@ form label {
     flex-direction: column;
 }
 
+.info-section {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header,
 .site-row,
-header {
+.info-section {
     background-color: #2c2307;
+}
+
+.info-section,
+.content-section {
+    padding-left: 10px;
+}
+
+.post-name {
+    padding-top: 10px;
 }
 
 header {
@@ -104,7 +131,7 @@ header h1 {
 }
 
 .site-name {
-    background-color: #b8cba2;
+    /* background-color: #b8cba2; */
     margin-bottom: 10px;
     padding: 0px 10px;
     border-style: double;
@@ -113,7 +140,7 @@ header h1 {
 main {
     flex: 1;
     padding: 2% 4%;
-    background-color: #b8cba2;
+    /* background-color: #b8cba2; */
 }
 
 .btn-no-style {
@@ -122,7 +149,8 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    /* color: #225ca3; */
+    /* color: #b8cba2; */
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -131,7 +159,8 @@ main {
 
 .btn-no-style:hover {
     background: none;
-    color: #3486eb;
+    /* color: #3486eb; */
+    /* color: #e2edd5; */
 }
 
 .delete-post-btn {
@@ -145,6 +174,7 @@ main {
 .post {
     margin-bottom: 2%;
     line-height: 150%;
+    border: 1px solid black;
 }
 
 .post .title span {
@@ -156,8 +186,8 @@ main {
 .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    color: #2c2307;
 }
-
 
 .comment-form {
     margin-bottom: 5%;
@@ -187,6 +217,15 @@ main {
 }
 
 #comment-subtitle {
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
+}
+
+.new-post-section {
+    display: flex;
+    justify-content: center;
+}
+
+#create-new-post {
+    width: 15%;
 }
