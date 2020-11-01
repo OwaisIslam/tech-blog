@@ -103,16 +103,32 @@ form label {
 
 header,
 .site-row,
-.info-section {
+.info-section,
+.form-heading {
     background-color: #2c2307;
 }
 
+.login-page,
+.sign-in-page,
+.new-form-page {
+    border: 3px solid black;
+    padding-bottom: 10px;
+}
+
+.form-heading {
+    padding: 10px;
+}
+
 .info-section,
-.content-section {
+.content-section,
+.form-section,
+.sign-in-link,
+.login-link {
     padding-left: 10px;
 }
 
-.post-name {
+.post-name,
+.post-title-section {
     padding-top: 10px;
 }
 
@@ -178,7 +194,7 @@ main {
 .post {
     margin-bottom: 2%;
     line-height: 150%;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .post .title span {
@@ -237,4 +253,23 @@ main {
 .sign-in-link,
 .login-link {
     color: #2c2307;
+}
+
+.form-heading h1,
+.form-heading h2 {
+    color: #b8cba2;
+}
+
+.login-form,
+.signup-form,
+.post-content,
+.post-title-section {
+    padding: 10px 10px 0px 0px;
+}
+
+.entry-field,
+.login-signup-btn,
+.btn,
+#post-title {
+    width: 100%;
 }

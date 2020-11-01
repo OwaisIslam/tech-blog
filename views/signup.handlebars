@@ -1,22 +1,24 @@
-<section>
+<section class="sign-in-page">
     <div class="form-heading">
         <h1>Sign Up</h1>
     </div>
-    <form class="signup-form">
-        <div>
-            <label for="username-signup">username:</label>
-            <input type="text" id="username-signup" />
-        </div>
-        <div>
-            <label for="password-signup">password:</label>
-            <input type="password" id="password-signup" />
-        </div>
-        <div>
-            <button type="submit">signup</button>
-        </div>
-    </form>
+    <div class="form-section">
+        <form class="signup-form">
+            <div>
+                <label for="username-signup">Select a Username</label>
+                <input type="text" class="entry-field" id="username-signup" />
+            </div>
+            <div>
+                <label for="password-signup">Select a password</label>
+                <input type="password" class="entry-field" id="password-signup" />
+            </div>
+            <div>
+                <button type="submit" class="login-signup-btn">Sign Up!</button>
+            </div>
+        </form>
+    </div>
 
-    <a href="/login" class="login-link">Log in instead</a>
+    <a href="/login" class="login-link">log in instead</a>
 </section>
 
 <script src="/javascript/signup.js"></script>
