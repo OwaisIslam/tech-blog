@@ -56,6 +56,10 @@ button:hover {
     list-style-type: none;
 }
 
+.go-back {
+    color: #2c2307;
+}
+
 textarea,
 input {
     padding: .5%;
@@ -228,4 +232,9 @@ main {
 
 #create-new-post {
     width: 15%;
+}
+
+.sign-in-link,
+.login-link {
+    color: #2c2307;
 }
