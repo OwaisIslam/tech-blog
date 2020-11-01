@@ -1,34 +1,30 @@
-<article>
-    <a href="/dashboard" class="go-back"> &larr; Back to dashboard</a>
-    <h2>
-        Edit Post
-    </h2>
-    <form class="edit-post-form">
-        <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
+<a href="/dashboard" class="go-back"> &larr; Back to dashboard</a>
+
+<article class="new-page">
+    <section class="edit-form-page">
+        <div class="form-heading">
+            <h2>
+                Edit Post
+            </h2>
         </div>
-        <div>
-            <textarea id="post-content" name="post-content">{{post.content}}</textarea>
+        <div class="form-section">
+            <form class="edit-post-form">
+                <div class="post-title-section">
+                    <label for="post-title">Title</label>
+                    <input type="text" name="post-title" id="post-title" value="{{post.title}}" />
+                </div>
+                <div class="post-content">
+                    <label for="post-content">Content</label>
+                    <textarea class="entry-field" id="post-content" name="post-content">{{post.content}}</textarea>
+                </div>
+                <button type="submit">Update post</button>
+                <button type="button" class="delete-post-btn">Delete post</button>
+            </form>
         </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
-    </form>
+    </section>
 </article>
-
-<form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
-    </div>
-
-    <div>
-        <button type="submit">add comment</button>
-    </div>
-</form>
-
-{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>
 {{/if}}

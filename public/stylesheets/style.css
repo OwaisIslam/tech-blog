@@ -110,7 +110,8 @@ header,
 
 .login-page,
 .sign-in-page,
-.new-form-page {
+.new-form-page,
+.edit-form-page {
     border: 3px solid black;
     padding-bottom: 10px;
 }
@@ -128,7 +129,7 @@ header,
 }
 
 .post-name,
-.post-title-section {
+.post-title-section, .new-page {
     padding-top: 10px;
 }
 
