@@ -29,8 +29,6 @@ a:hover,
 
 a {
     text-decoration: none;
-    /* color: #225ca3; */
-    /* color: #b8cba2; */
     font-weight: bold;
     transition: color .1s;
 }
@@ -134,7 +132,6 @@ header,
 }
 
 header {
-    /* border-bottom: 1px solid #ccc; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -152,7 +149,6 @@ header h1 {
 }
 
 .site-name {
-    /* background-color: #b8cba2; */
     margin-bottom: 10px;
     padding: 0px 10px;
     border-style: double;
@@ -161,7 +157,6 @@ header h1 {
 main {
     flex: 1;
     padding: 2% 4%;
-    /* background-color: #b8cba2; */
 }
 
 .btn-no-style {
@@ -170,8 +165,6 @@ main {
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    /* color: #225ca3; */
-    /* color: #b8cba2; */
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -180,8 +173,6 @@ main {
 
 .btn-no-style:hover {
     background: none;
-    /* color: #3486eb; */
-    /* color: #e2edd5; */
 }
 
 .delete-post-btn {
